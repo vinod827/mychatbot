@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const app = express() 
-const port = 5000 
+const port = 5050 
 app.use(bodyParser.json()) 
 
 app.post('/', (req, res) => {
@@ -25,5 +25,5 @@ app.post('/errors', (req, res) => {
 }) 
 
 app.listen(port, () => { 
-  console.log('Server is running on port 5000') 
+  console.log('Server is running on port: ' +port) 
 })
